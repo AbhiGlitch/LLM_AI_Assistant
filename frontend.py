@@ -13,6 +13,6 @@ if st.button("Send"):
         )
 
         st.write("You:", question)
-        st.write(response.json())
+        st.write(response.json()["response"])
     except Exception as e:
         st.error(f"Error: {e}")
