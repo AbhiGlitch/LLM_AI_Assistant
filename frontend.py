@@ -8,7 +8,7 @@ question = st.text_input("Enter your question")
 if st.button("Send"):
     try:
         response = requests.post(
-            "https://your-backend-name.onrender.com/ask",
+            "https://llm-ai-backend.onrender.com/ask",
             json={"text": question}
         )
 
