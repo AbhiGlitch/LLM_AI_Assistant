@@ -8,7 +8,7 @@ question = st.text_input("Enter your question")
 if st.button("Send"):
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/ask",
+            "https://your-backend-name.onrender.com/ask",
             json={"text": question}
         )
 
